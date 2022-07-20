@@ -1,0 +1,10 @@
+<app-breadcrumb *ngIf="_globals?.title != 'settings'" [title]="_globals?.title == 'overview' ? _globals?.title : _globals?.title + ' Management'"></app-breadcrumb>
+
+<overview-page *ngIf="_globals?.title == 'overview'"></overview-page>
+<accounts-page *ngIf="_globals?.title == 'customers'"></accounts-page>
+<orders-page *ngIf="_globals?.title == 'orders'"></orders-page>
+<orders-page *ngIf="_globals?.title == 'transactions'"></orders-page>
+<subscription-page *ngIf="_globals?.title == 'subscriptions'"></subscription-page>
+<staffs-page *ngIf="_globals?.title == 'staffs'"></staffs-page>
+<invoice-page *ngIf="_globals?.title == 'invoices'"></invoice-page>
+<settings-page *ngIf="_globals?.title == 'settings'"></settings-page>

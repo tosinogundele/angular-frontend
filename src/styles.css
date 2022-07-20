@@ -1,0 +1,14 @@
+.fab {
+    position: fixed !important;
+    bottom: 50px;
+    right: 20px
+}
+.fs-20 {
+    font-size: 20px !important;
+}
+.fs-25 {
+    font-size: 25px !important;
+}
+.fs-30 {
+    font-size: 30px !important;
+}

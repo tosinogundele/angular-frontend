@@ -1,0 +1,163 @@
+<div class="vertical-menu">
+
+    <!-- LOGO -->
+    <div class="navbar-brand-box">
+        <a href="index.html" class="logo logo-dark">
+            <span class="logo-sm">
+                <img src="assets/images/logo-dark-sm.png" alt="" height="22">
+            </span>
+            <span class="logo-lg">
+                <img src="assets/images/logo-dark.png" alt="" height="18">
+            </span>
+        </a>
+
+        <a href="index.html" class="logo logo-light">
+            <span class="logo-sm">
+                <img src="assets/images/logo-light-sm.png" alt="" height="22">
+            </span>
+            <span class="logo-lg">
+                <img src="assets/images/logo-light.png" alt="" height="18">
+            </span>
+        </a>
+    </div>
+
+    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+        <i class="fa fa-fw fa-bars"></i>
+    </button>
+
+    <div data-simplebar="init" class="sidebar-menu-scroll">
+        <div class="simplebar-wrapper" style="margin: 0px;">
+            <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+            </div>
+            <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: -20px; bottom: 0px;">
+                    <div class="simplebar-content-wrapper"
+                        style="height: 100%; padding-right: 20px; padding-bottom: 0px; overflow: hidden scroll;">
+                        <div class="simplebar-content" style="padding: 0px;">
+
+                            <!--- Sidemenu -->
+                            <div id="sidebar-menu" class="mm-active">
+                                <!-- Left Menu Start -->
+                                <ul class="metismenu list-unstyled mm-show" id="side-menu">
+
+                                    <li class="">
+                                        <a routerLink="/overview" class="waves-effect" aria-expanded="false"
+                                            routerLinkActive=" mm-active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-home icon nav-icon">
+                                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                            </svg>
+                                            <span class="badge badge-pill badge-primary float-right">2</span>
+                                            <span class="menu-item" key="t-dashboards">Overview</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a routerLink="/analytics" routerLinkActive="mm-active">
+                                            <i class="uil-invoice"></i>
+                                            <span>Analytics</span>
+                                        </a>
+                                    </li>
+                                    <br />
+
+                                    <li class="menu-title">Orders & Transactions</li>
+
+                                    <li>
+                                        <a routerLink="/transactions" routerLinkActive="mm-active">
+                                            <i class="uil-money"></i>
+                                            <span>Transactions / Payments</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a routerLink="/orders" routerLinkActive="mm-active">
+                                            <i class="uil-money-stack"></i>
+                                            <span>Orders Management</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a routerLink="/subscriptions" routerLinkActive="mm-active">
+                                            <i class="uil-invoice"></i>
+                                            <span>Subscriptions</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a routerLink="/invoices" routerLinkActive="mm-active">
+                                            <i class="uil-invoice"></i>
+                                            <span>Invoice Management</span>
+                                        </a>
+                                    </li>
+                                    <br />
+
+
+                                    <li class="menu-title">Users & Staff</li>
+
+                                    <li>
+                                        <a routerLink="/customers" routerLinkActive="mm-active">
+                                            <i class="uil-user-square"></i>
+                                            <span>Customer Accounts</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a routerLink="/staffs" routerLinkActive="mm-active">
+                                            <i class="uil uil-suitcase-alt"></i>
+                                            <span>Managers Accounts</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a routerLink="/access" routerLinkActive="mm-active">
+                                            <i class="uil-user"></i>
+                                            <span>Access Management</span>
+                                        </a>
+                                    </li>
+                                    <br />
+                                    <br />
+
+
+                                    <li>
+                                        <a routerLink="/reports" routerLinkActive="mm-active">
+                                            <i class="uil uil-chart font-size-18 align-middle me-1 text-muted"></i>
+                                            <span>Reports</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a routerLink="/settings" routerLinkActive="mm-active">
+                                            <i class="uil uil-settings font-size-18 align-middle me-1 text-muted"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+
+                                    <!-- <br />
+                <li class="menu-title" key="t-menu">Users & Staff</li>
+
+                <li class="">
+                    <a class="waves-effect mm-active" aria-expanded="false" data-toggle="collapse" data-target="#collapseExample">
+                        <i class="uil-user-square"></i>
+                        <span class="menu-item ml-10" key="t-dashboards">User Accounts</span>
+                    </a>
+                    <ul class="sub-menu collapse" aria-expanded="false" id="collapseExample" style="height: 0px;">
+                        <li class="mm-active"><a href="index.html" key="t-ecommerce" class="active">Ecommerce</a></li>
+                        <li><a href="dashboard-saas.html" key="t-saas">Saas</a></li>
+                    </ul>
+                </li> -->
+
+                                </ul>
+                            </div>
+                            <!-- Sidebar -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
